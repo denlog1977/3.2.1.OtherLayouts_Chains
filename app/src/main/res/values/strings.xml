@@ -22,4 +22,13 @@
     <string name="textViewButtonPlus">+</string>
     <string name="textViewButtonEqual">=</string>
 
+    <string name="L">L</string>
+    <string name="O">O</string>
+    <string name="G">G</string>
+    <string name="I">I</string>
+    <string name="N">N</string>
+    <string name="V">V</string>
+    <string name="LOGINOV">LOGINOV</string>
+
+
 </resources>

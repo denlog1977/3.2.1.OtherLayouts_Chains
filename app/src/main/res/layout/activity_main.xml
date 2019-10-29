@@ -11,15 +11,90 @@
         android:id="@+id/textViewInputNumbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="@string/textViewInputNumbers" />
 
     <LinearLayout
         android:id="@+id/layout0"
-        android:layout_below="@id/textViewInputNumbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_below="@id/textViewInputNumbers">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/letters1constraintlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/L"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/O"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/O"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintEnd_toEndOf="@id/L"
+                app:layout_constraintStart_toEndOf="@id/L"
+                app:layout_constraintTop_toTopOf="@id/L" />
+
+            <TextView
+                android:id="@+id/G"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/G"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintBaseline_toBaselineOf="@id/O"
+                app:layout_constraintEnd_toEndOf="@id/O"
+                app:layout_constraintStart_toEndOf="@id/O" />
+
+            <TextView
+                android:id="@+id/I"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/I"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintBaseline_toBaselineOf="@id/G"
+                app:layout_constraintEnd_toEndOf="@id/G"
+                app:layout_constraintStart_toEndOf="@id/G" />
+
+            <TextView
+                android:id="@+id/N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/N"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintBaseline_toBaselineOf="@id/I"
+                app:layout_constraintEnd_toEndOf="@id/I"
+                app:layout_constraintStart_toEndOf="@id/I" />
+
+            <TextView
+                android:id="@+id/OO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/O"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintBaseline_toBaselineOf="@id/N"
+                app:layout_constraintEnd_toEndOf="@id/N"
+                app:layout_constraintStart_toEndOf="@id/N" />
+
+            <TextView
+                android:id="@+id/V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/V"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintBaseline_toBaselineOf="@id/OO"
+                app:layout_constraintEnd_toEndOf="@id/OO"
+                app:layout_constraintStart_toEndOf="@id/OO" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:id="@+id/layout1"
@@ -189,7 +264,7 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+    </Layout>
 
 
 
