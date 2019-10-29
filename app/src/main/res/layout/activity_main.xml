@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
 
     <TextView
         style="@style/FontTheme40InputNumbers"
@@ -14,6 +15,7 @@
         android:text="@string/textViewInputNumbers" />
 
     <LinearLayout
+
         android:id="@+id/layout0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,77 +25,87 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/letters1constraintlayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+
+            >
 
             <TextView
                 android:id="@+id/L"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/FontThemeLetters"
                 android:text="@string/L"
                 app:layout_constraintHorizontal_chainStyle="spread"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/O"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
 
             <TextView
                 android:id="@+id/O"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/FontThemeLetters"
                 android:text="@string/O"
                 app:layout_constraintHorizontal_chainStyle="spread"
-                app:layout_constraintEnd_toEndOf="@id/L"
-                app:layout_constraintStart_toEndOf="@id/L"
-                app:layout_constraintTop_toTopOf="@id/L" />
+                app:layout_constraintStart_toEndOf="@+id/L"
+                app:layout_constraintEnd_toStartOf="@+id/G"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
 
             <TextView
                 android:id="@+id/G"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/FontThemeLetters"
                 android:text="@string/G"
                 app:layout_constraintHorizontal_chainStyle="spread"
-                app:layout_constraintBaseline_toBaselineOf="@id/O"
-                app:layout_constraintEnd_toEndOf="@id/O"
-                app:layout_constraintStart_toEndOf="@id/O" />
+                app:layout_constraintStart_toEndOf="@+id/O"
+                app:layout_constraintEnd_toStartOf="@+id/I"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
 
             <TextView
                 android:id="@+id/I"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/FontThemeLetters"
                 android:text="@string/I"
                 app:layout_constraintHorizontal_chainStyle="spread"
-                app:layout_constraintBaseline_toBaselineOf="@id/G"
-                app:layout_constraintEnd_toEndOf="@id/G"
-                app:layout_constraintStart_toEndOf="@id/G" />
+                app:layout_constraintStart_toEndOf="@+id/G"
+                app:layout_constraintEnd_toStartOf="@+id/N"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
 
             <TextView
                 android:id="@+id/N"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/FontThemeLetters"
                 android:text="@string/N"
                 app:layout_constraintHorizontal_chainStyle="spread"
-                app:layout_constraintBaseline_toBaselineOf="@id/I"
-                app:layout_constraintEnd_toEndOf="@id/I"
-                app:layout_constraintStart_toEndOf="@id/I" />
+                app:layout_constraintStart_toEndOf="@+id/I"
+                app:layout_constraintEnd_toStartOf="@+id/OO"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
 
             <TextView
                 android:id="@+id/OO"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/FontThemeLetters"
                 android:text="@string/O"
                 app:layout_constraintHorizontal_chainStyle="spread"
-                app:layout_constraintBaseline_toBaselineOf="@id/N"
-                app:layout_constraintEnd_toEndOf="@id/N"
-                app:layout_constraintStart_toEndOf="@id/N" />
+                app:layout_constraintStart_toEndOf="@+id/N"
+                app:layout_constraintEnd_toStartOf="@+id/V"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
 
             <TextView
                 android:id="@+id/V"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/FontThemeLetters"
                 android:text="@string/V"
                 app:layout_constraintHorizontal_chainStyle="spread"
-                app:layout_constraintBaseline_toBaselineOf="@id/OO"
-                app:layout_constraintEnd_toEndOf="@id/OO"
-                app:layout_constraintStart_toEndOf="@id/OO" />
+                app:layout_constraintStart_toEndOf="@+id/OO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
@@ -264,7 +276,7 @@
 
         </LinearLayout>
 
-    </Layout>
+    </LinearLayout>
 
 
 
